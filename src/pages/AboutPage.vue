@@ -1,0 +1,28 @@
+<template>
+    <div>
+      <v-row>
+        <v-col>
+            test1
+        </v-col>
+        <v-col>
+            test2
+        </v-col>
+      </v-row>
+      <v-row>
+        <v-col>
+            test1
+        </v-col>
+        <v-col>
+            test2
+        </v-col>
+      </v-row>
+      <v-row>
+        <v-col>
+            test1
+        </v-col>
+        <v-col>
+            test2
+        </v-col>
+      </v-row>
+    </div>
+</template>
