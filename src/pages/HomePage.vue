@@ -2,7 +2,7 @@
     <v-container fluid class="hero-section">
       <!-- Carousel -->
       <v-carousel
-        height="600"
+        height="650"
         show-arrows="hover"
         cycle
         hide-delimiter-background
@@ -42,13 +42,25 @@
           </v-col>
         </v-row>
       </div>
+      <div>
+        <assetsection />
+      </div>
+      <div>
+        <trustsection />
+      </div>
+      <div>
+        <serviceoverview />
+      </div>
     </v-container>
   </template>
   
   <script setup>
   import { ref } from "vue";
-  import calculator from '../components/CalculatorSection.vue'
-  
+  import calculator from '../components/Home/CalculatorSection.vue'
+  import assetsection from '../components/Home/AssetSection.vue'
+  import trustsection from '../components/Home/TrustSection.vue'
+  import serviceoverview from '../components/Home/ServiceOverview.vue'
+
   const currentSlide = ref(0);
   
   const pics = ref([
@@ -75,9 +87,9 @@
   
   <style scoped>
   .hero-section {
-    background-color: #8fdefa; /* Light greenish background */
+    background-color: lightgray; /* Light greenish background */
     padding: 50px 0;
-    padding-top: 120px;
+    /* padding-top: 120px; */
     position: relative;
     padding-bottom: 0px;
   }
@@ -143,16 +155,18 @@
   }
   
   /* Overlay content for calculator */
-  .overlay-content {
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 2; /* Make sure it's on top of the carousel */
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    padding: 40px;
-  }
+.overlay-content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2; /* Ensure it's on top of the carousel */
+  width: 80%; /* Limit width to 50% for the calculator on the right side */
+  height: 80%;
+  display: flex;
+  align-items: flex-start; /* Align to the top */
+  justify-content: flex-end; /* Push the calculator to the right */
+  padding: 40px;
+  padding-top: 20px;
+}
   </style>
   
