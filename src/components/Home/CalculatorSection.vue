@@ -88,7 +88,7 @@
       </v-card-text>
 
       <v-card-actions>
-        <v-btn class="text-none mb-4 button-col" size="x-large" variant="flat" block >PAWN VEHICLE!</v-btn>
+        <v-btn class="text-none mb-4 button-col" size="x-large" variant="flat" block to="/pawn" >PAWN VEHICLE!</v-btn>
       </v-card-actions>
     </v-card>
   </v-container>

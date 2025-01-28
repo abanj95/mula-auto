@@ -1,5 +1,5 @@
 <template>
-    <v-container class="service-overview my-16" fluid>
+    <v-container class="service-overview" fluid>
       <v-row>
         <!-- Title Section -->
         <v-col cols="12" class="text-center">
@@ -56,7 +56,7 @@
   <style scoped>
   .service-overview {
     background-color: #121536;
-    padding: 40px;
+    /* padding: 40px; */
   }
   
   .service-title {

@@ -4,11 +4,12 @@
     variant="flat"
     height="80"
     color="white"
+    fixed
+    app
   >
     <v-container class="header-content d-flex justify-center align-center">
       <!-- Logo Section -->
       <v-img
-        text to="/"
         src="@/assets/mula-logo.svg"
         alt="Logo"
         max-width="150"
@@ -20,7 +21,7 @@
       <v-btn text to="/">Home</v-btn>
       <v-btn text to="/services">Services</v-btn>
       <v-btn text to="/how-it-works">How it Works</v-btn>
-      <v-btn text to="/showroom">Showroom</v-btn>
+      <v-btn text to="/vehicles-for-sale">Showroom</v-btn>
       <v-spacer />
 
       <!-- Call to Action Button -->
@@ -45,8 +46,10 @@
   background-color: #ffffff;
   margin: 0 auto; /* Center the whole navbar */
   width: 100%; /* Ensure it spans the full width */
+  padding: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
-
 .header-content {
   max-width: 1200px; /* Limit the width of the nav content */
   width: 100%;

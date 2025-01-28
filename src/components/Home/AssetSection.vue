@@ -21,7 +21,7 @@
 <style scoped>
 .assets-section {
   padding: 50px 0;
-  background-color: lightgrey;
+  /* background-color: lightgrey; */
   /* border-radius: 20px; */
 }
 
