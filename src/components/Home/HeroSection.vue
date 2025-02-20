@@ -18,7 +18,7 @@
 </template>
 
 <script setup>
-import { ref, watch, toRefs } from 'vue';
+import { ref, watch, defineProps } from 'vue';
 
 const props = defineProps({
   currentSlide: Number

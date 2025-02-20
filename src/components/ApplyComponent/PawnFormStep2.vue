@@ -1,7 +1,7 @@
 <template>
     <v-card class="pa-4">
       <h2 class="step-title">Upload Pictures</h2>
-  
+  <!-- <VehicleBlueprint /> -->
       <PawnImageUpload label="Front Side" icon="front.svg" v-model="localForm.vehicleImages.front" />
       <PawnImageUpload label="Back Side" icon="back.svg" v-model="localForm.vehicleImages.back" />
       <PawnImageUpload label="Left Side" icon="left.svg" v-model="localForm.vehicleImages.left" />
@@ -14,6 +14,7 @@
   <script setup>
   import { defineProps, defineEmits, ref, watch } from 'vue';
   import PawnImageUpload from "./PawnImageUpload.vue";
+  // import VehicleBlueprint from './VehicleBlueprint.vue';
   
   const props = defineProps(["form"]);
   const emit = defineEmits(["update:form"]);

@@ -1,5 +1,5 @@
 <template>
-  <v-container class="calculator-card" max-width="600">
+  <v-container class="calculator-card">
     <v-card>
       <v-card-title class="text-h6">Pawn Calculator</v-card-title>
 
@@ -130,6 +130,9 @@ const repayableAmount = computed(() => {
 <style scoped>
 .calculator-card {
   margin-top: 20px;
+  width: 100%;              /* Full width of parent */
+  max-width: 1000px !important;          /* Adjust as needed */
+  margin: 0 auto;  
 }
 
 .v-card {

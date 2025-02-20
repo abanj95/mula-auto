@@ -7,8 +7,8 @@
           <v-col cols="12" md="3">
             <h4 class="footer-title">Company</h4>
             <ul class="footer-links">
-              <li><a href="/about"><v-icon size="12px" color="primary">mdi-greater-than</v-icon> About Us</a></li>
-              <li><a href="/privacy"><v-icon size="12px" color="primary">mdi-greater-than</v-icon> Privacy Policy</a></li>
+              <li><a href="/about"><v-icon size="12px" color="white">mdi-greater-than</v-icon> About Us</a></li>
+              <li><a href="/privacy-policy"><v-icon size="12px" color="white">mdi-greater-than</v-icon> Privacy Policy</a></li>
             </ul>
           </v-col>
   
@@ -16,9 +16,9 @@
           <v-col cols="12" md="3">
             <h4 class="footer-title">Services</h4>
             <ul class="footer-links">
-              <li><a href="/pawn"><v-icon size="12px" color="primary">mdi-greater-than</v-icon> Auto Pawn</a></li>
-              <li><a href="/Show-room"><v-icon size="12px" color="primary">mdi-greater-than</v-icon> Buy Vehicle</a></li>
-              <li><a href="/evaluation"><v-icon size="12px" color="primary">mdi-greater-than</v-icon> Vehicle Evaluation</a></li>
+              <li><a href="/pawn"><v-icon size="12px" color="white">mdi-greater-than</v-icon> Auto Pawn</a></li>
+              <li><a href="/vehicles-for-sale"><v-icon size="12px" color="white">mdi-greater-than</v-icon> Buy Vehicle</a></li>
+              <li><a href="/evaluation"><v-icon size="12px" color="white">mdi-greater-than</v-icon> Vehicle Evaluation</a></li>
             </ul>
           </v-col>
   
@@ -26,10 +26,11 @@
           <v-col cols="12" md="3">
             <h4 class="footer-title">Support</h4>
             <ul class="footer-links">
-              <li><a href="/faq"><v-icon size="12px" color="primary">mdi-greater-than</v-icon> FAQ</a></li>
-              <li><a href="/terms"><v-icon size="12px" color="primary">mdi-greater-than</v-icon> Terms of Service</a></li>
-              <li><a href="/complaints"><v-icon size="12px" color="primary">mdi-greater-than</v-icon> Complaints</a></li>
-              <li><a href="/contact"><v-icon size="12px" color="primary">mdi-greater-than</v-icon> Contact Us</a></li>
+              <li><a href="/faq"><v-icon size="12px" color="white">mdi-greater-than</v-icon> FAQ</a></li>
+              <li><a href="/terms"><v-icon size="12px" color="white">mdi-greater-than</v-icon> Terms of Service</a></li>
+              <li><a href="/complaints"><v-icon size="12px" color="white">mdi-greater-than</v-icon> Complaints</a></li>
+              <li><a href="/contact"><v-icon size="12px" color="white">mdi-greater-than</v-icon> Contact Us</a></li>
+              <li><a href="/login"><v-icon size="12px" color="white">mdi-greater-than</v-icon> Login</a></li>
             </ul>
           </v-col>
   
@@ -37,16 +38,16 @@
           <v-col cols="12" md="3">
             <h4 class="footer-title">Follow Us</h4>
             <div class="footer-social-icons">
-              <v-btn icon color="primary" href="https://facebook.com" target="_blank">
+              <v-btn icon color="white" href="https://facebook.com" target="_blank">
                 <v-icon>mdi-facebook</v-icon>
               </v-btn>
-              <v-btn icon color="primary" href="https://instagram.com" target="_blank">
+              <v-btn icon color="white" href="https://instagram.com" target="_blank">
                 <v-icon>mdi-instagram</v-icon>
               </v-btn>
-              <v-btn icon color="primary" href="https://youtube.com" target="_blank">
+              <v-btn icon color="white" href="https://youtube.com" target="_blank">
                 <v-icon>mdi-youtube</v-icon>
               </v-btn>
-              <v-btn icon color="primary" href="https://whatsapp.com" target="_blank">
+              <v-btn icon color="white" href="https://whatsapp.com" target="_blank">
                 <v-icon>mdi-whatsapp</v-icon>
               </v-btn>
             </div>

@@ -9,10 +9,19 @@ import VehiclesForSale from '../pages/VehiclesForSale.vue';
 import HowItWorks from '../pages/HowItWorks.vue';
 import PawnPage from '@/pages/PawnPage.vue';
 import FaqPage from '@/pages/FaqPage.vue';
+import VehicleDetails from '@/pages/VehicleDetails.vue';
+import ComplaintPage from '@/pages/ComplaintPage.vue';
+import PrivacyPolicy from '@/pages/PrivacyPolicy.vue';
+import TermsPage from '@/pages/TermsPage.vue';
+import LoginPage from '@/pages/LoginPage.vue';
 
 // Backend pages
 import AdminLayout from '@/admin/views/AdminLayout.vue';
 import DashBoard from '@/admin/views/DashBoard.vue';
+import LoanDetails from '@/admin/views/LoanDetails.vue';
+import ShowRoom from '@/admin/views/ShowRoom.vue';
+import EditVehicle from '@/admin/views/EditVehicle.vue';
+import OffersPage from '@/admin/views/OffersPage.vue';
 
 const routes = [
 
@@ -21,6 +30,11 @@ const routes = [
     path: '/',
     name: 'Home',
     component: HomePage 
+  },
+  {
+    path:'/login',
+    name:'login',
+    component: LoginPage,
   },
   {
     path: '/about',
@@ -52,7 +66,32 @@ const routes = [
     name: 'faq',
     component: FaqPage
   },
-
+  {
+    path:'/vehicle-details',
+    name: 'Vehicle',
+    component: VehicleDetails
+  },
+  {
+    path: '/vehicle/:id', // Ensure this path matches the expected URL
+    name: 'VehicleDetails',
+    component: VehicleDetails,
+    props: true, // To pass the `id` as a prop to VehicleDetails.vue
+  },
+  {
+    path:'/complaints',
+    name:'complaints',
+    component:ComplaintPage,
+  },
+  {
+    path:'/privacy-policy',
+    name:'privacy',
+    component:PrivacyPolicy,
+  },
+  {
+    path:'/terms',
+    name:'terms',
+    component:TermsPage,
+  },
   // backEnd rounting
 
   {
@@ -63,10 +102,33 @@ const routes = [
         path:'dashboard',
         name:'adminDashboard',
         component: DashBoard
-      }
+      },
+      {
+      path: 'loan/:id',  // Route for viewing loan details
+      name: 'loanDetails',
+      component: LoanDetails,
+      props: true 
+      },
+      {
+        path:'showroom',
+        name:'Showroom',
+        component: ShowRoom
+      },
+      {
+        path:'showroom/edit/:id', 
+        name:'EditVehicle', 
+        component: EditVehicle,
+        props: true,
+      },
+      {
+        path:'offers', 
+        name:'offers', 
+        component: OffersPage,
+        props: true,
+      },
     ]
 
-  }
+  },
     
 ];
 
