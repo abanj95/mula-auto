@@ -2,6 +2,14 @@
 node_modules
 /dist
 
+# Backend-specific ignores
+/backend/node_modules/
+/backend/uploads/
+/backend/showroom_uploads/
+
+# Frontend-specific ignores
+/frontend/node_modules/
+/frontend/dist/
 
 # local env files
 .env.local
@@ -22,3 +30,8 @@ pnpm-debug.log*
 *.sln
 *.sw?
 node_modules
+
+# Operating system files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
