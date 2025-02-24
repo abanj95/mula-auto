@@ -6,6 +6,8 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import { dirname } from 'path';
 import fs from 'fs';
+import bcrypt from "bcrypt";
+import jwt from "jsonwebtoken";
 
 
 const app = express();
@@ -461,5 +463,41 @@ router.delete('/offers/:id', async (req, res) => {
   }
 });
 
+// Login endpoint
+router.post("/admin/login", async (req, res) => {
+  const { email, password } = req.body;
+
+  try {
+    const result = await pool.query("SELECT * FROM admins WHERE email = $1", [
+      email,
+    ]);
+
+    if (result.rows.length === 0) {
+      return res.status(401).json({ error: "Invalid email or password" });
+    }
+
+    const admin = result.rows[0];
+
+    if (!admin.is_active) {
+      return res.status(403).json({ error: "Account is inactive. Contact support." });
+    }
+
+    const validPassword = await bcrypt.compare(password, admin.password_hash);
+    if (!validPassword) {
+      return res.status(401).json({ error: "Invalid email or password" });
+    }
+
+    const token = jwt.sign(
+      { id: admin.id, email: admin.email, role: admin.role },
+      process.env.JWT_SECRET,
+      { expiresIn: "7d" }
+    );
+
+    res.json({ token, admin: { id: admin.id, username: admin.username, role: admin.role } });
+  } catch (error) {
+    console.error("Login error:", error);
+    res.status(500).json({ error: "Internal server error" });
+  }
+});
 
 export default router;
