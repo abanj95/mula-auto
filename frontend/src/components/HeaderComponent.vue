@@ -8,9 +8,12 @@
       <!-- ✅ Contact Info (Hidden on Small Screens) -->
       <div class="contact-info d-none d-md-flex align-center">
         <v-divider vertical class="mx-3"></v-divider>
-        <div class="phone-number">(061) 225 352</div>
+        <div class="phone-number">(085) 775 9878</div>
         <v-divider vertical class="mx-3"></v-divider>
-        <v-btn icon>
+        <v-btn icon href="https://api.whatsapp.com/send/?phone=264813000592&text=Hi%2C+Mula+Channels+Trading&type=phone_number&app_absent=0"
+                    target="_blank"
+                    rel="noopener noreferrer"
+>
           <v-icon>mdi-whatsapp</v-icon>
         </v-btn>
         <v-divider vertical class="mx-3"></v-divider>
@@ -51,6 +54,9 @@
 <script setup>
 import { ref } from 'vue';
 const drawer = ref(false); // ✅ Controls the mobile drawer
+
+// const whatsapp = ref(null);
+// const whatsapp =ref("https://api.whatsapp.com/send/?phone=264813000592&text=Hi%2C+Mula+Channels+Trading&type=phone_number&app_absent=0");
 </script>
 
 ---
