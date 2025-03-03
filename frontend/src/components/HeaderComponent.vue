@@ -54,9 +54,6 @@
 <script setup>
 import { ref } from 'vue';
 const drawer = ref(false); // ✅ Controls the mobile drawer
-
-// const whatsapp = ref(null);
-// const whatsapp =ref("https://api.whatsapp.com/send/?phone=264813000592&text=Hi%2C+Mula+Channels+Trading&type=phone_number&app_absent=0");
 </script>
 
 ---
