@@ -8,6 +8,7 @@
         :class="{
           'page-container': $route.path !== '/', // Only add margin-top if not on the homepage
         }"
+        class="pa-0"
       >
         <router-view />
       </v-container>
